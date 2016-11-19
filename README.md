@@ -3,7 +3,7 @@ Tugas Besar Mata Kuliah LBW
 
 Notes:
 Untuk bisa menjalankan file copy file cacert.pem dan php.ini dari folder XAMPP\php\ ke folder instalasi XAMPP\php
-Kalau tidak inging meng-overwrite php.ini, tambahkan line:
+Kalau tidak mau overwrite php.ini, tambahkan line:
 
     [curl]
     ; A default value for the CURLOPT_CAINFO option. This is required to be an
