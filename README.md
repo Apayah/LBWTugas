@@ -7,6 +7,14 @@ Landing pagenya index.php
 
 -----------------------------------------------------
 
+di file index.php di line 
+
+    $loginUrl = $helper->getLoginUrl('http://localhost:81/LBWTugas/main.php', $permissions);
+
+ganti http://localhost:81 ke port yang dipakai
+
+-----------------------------------------------------
+
 Jika terjadi error *SSL Error: unable to get local issuer certificate file* maka: copy file cacert.pem dan php.ini dari folder XAMPP\php\ ke folder instalasi XAMPP\php Kalau tidak mau overwrite php.ini, tambahkan line:
 
     [curl]
@@ -17,11 +25,5 @@ Jika terjadi error *SSL Error: unable to get local issuer certificate file* maka
 
 di file php.ini XAMPP
 
------------------------------------------------------
 
-di file index.php di line 
-
-    $loginUrl = $helper->getLoginUrl('http://localhost:81/LBWTugas/main.php', $permissions);
-
-ganti http://localhost:81 ke port yang dipakai
 
