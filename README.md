@@ -3,10 +3,10 @@ Tugas Besar Mata Kuliah LBW
 
 Notes:
 
-1. Landing pagenya index.php
+Landing pagenya index.php
+-----------------------------------------------------
 
-2. Jika terjadi error SSL Error: unable to get local issuer certificate file maka: copy file cacert.pem dan php.ini dari folder XAMPP\php\ ke folder instalasi XAMPP\php
-Kalau tidak mau overwrite php.ini, tambahkan line:
+Jika terjadi error *SSL Error: unable to get local issuer certificate file* maka: copy file cacert.pem dan php.ini dari folder XAMPP\php\ ke folder instalasi XAMPP\php Kalau tidak mau overwrite php.ini, tambahkan line:
 
     [curl]
     ; A default value for the CURLOPT_CAINFO option. This is required to be an
@@ -16,7 +16,9 @@ Kalau tidak mau overwrite php.ini, tambahkan line:
 
 di file php.ini XAMPP
 
-3. Di file index.php di line 
+-----------------------------------------------------
+
+di file index.php di line 
 
     $loginUrl = $helper->getLoginUrl('http://localhost:81/LBWTugas/main.php', $permissions);
 
