@@ -2,7 +2,10 @@
 Tugas Besar Mata Kuliah LBW
 
 Notes:
-Untuk bisa menjalankan file copy file cacert.pem dan php.ini dari folder XAMPP\php\ ke folder instalasi XAMPP\php
+
+1. Landing pagenya index.php
+
+2. Jika terjadi error SSL Error: unable to get local issuer certificate file maka: copy file cacert.pem dan php.ini dari folder XAMPP\php\ ke folder instalasi XAMPP\php
 Kalau tidak mau overwrite php.ini, tambahkan line:
 
     [curl]
@@ -11,9 +14,9 @@ Kalau tidak mau overwrite php.ini, tambahkan line:
     curl.cainfo="D:\Utilities\Xampp\php\cacert.pem"
     openssl.cafile="D:\Utilities\Xampp\php\cacert.pem"
 
-ke php.ini
+di file php.ini XAMPP
 
-Di file index.php di line 
+3. Di file index.php di line 
 
     $loginUrl = $helper->getLoginUrl('http://localhost:81/LBWTugas/main.php', $permissions);
 
