@@ -4,6 +4,7 @@ Tugas Besar Mata Kuliah LBW
 Notes:
 
 Landing pagenya index.php
+
 -----------------------------------------------------
 
 Jika terjadi error *SSL Error: unable to get local issuer certificate file* maka: copy file cacert.pem dan php.ini dari folder XAMPP\php\ ke folder instalasi XAMPP\php Kalau tidak mau overwrite php.ini, tambahkan line:
